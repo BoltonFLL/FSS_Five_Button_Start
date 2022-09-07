@@ -28,10 +28,13 @@ small_font = Font(size=14)  # Define font sizes to use on the screen
 normal_font = Font(size=20)
 ev3.screen.set_font(normal_font)
 
+
+from button_up_mission import button_up_mission
+
 # All initialization is done now define five functions, one associated with each button
 
 def button_up():  # Put up button code below this line *************
-    
+    button_up_mission()
     print("button_up done")
     # End of button_up function ****************************************
 
